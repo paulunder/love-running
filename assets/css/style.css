@@ -1,3 +1,6 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +14,21 @@ body {
     color: darkslategray;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
 
 header {
     background-color: #fff;
-    height: 60px;
-    line-height: 60px;
+    padding: 0 1rem;
     position: fixed;
-    top: 0;
-    width: 100%;
     z-index: 999;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 
 header .logo {
@@ -28,7 +37,6 @@ header .logo {
 }
 
 main {
-    margin-top: 60px;
     background-color: aqua;
     flex: 1 0 auto;
 }

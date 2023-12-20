@@ -31,6 +31,20 @@ nav {
     padding: 0 1rem;
     left: 0;
     display: none;
+    top: 100%;
+}
+
+/* Navbar toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 header {
@@ -40,6 +54,9 @@ header {
     z-index: 999;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    justify-content: space-between;
+    align-items: baseline;
+    display: flex;
 }
 
 header .logo {
@@ -55,6 +72,7 @@ header a {
 main {
     background-color: aqua;
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 footer {
@@ -79,4 +97,27 @@ footer {
 
 .active {
     border-bottom: #3a3a3a solid 1px;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        margin-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }

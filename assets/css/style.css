@@ -83,6 +83,7 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 999;
+
 }
 
 #menu {
@@ -98,6 +99,20 @@ footer {
 .active {
     border-bottom: #3a3a3a solid 1px;
 }
+
+#social-networks {
+    text-align: center;
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -119,5 +134,22 @@ footer {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        margin-top: 79px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #menu>li:hover {
+        border-bottom: #3a3a3a solid 1px;
     }
 }

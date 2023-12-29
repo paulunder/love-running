@@ -24,6 +24,10 @@ h3 {
     letter-spacing: 2px;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 #cover-text {
     background-color: rgba(241, 109, 107, 0.7);
     font-size: 130%;

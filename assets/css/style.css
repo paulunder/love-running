@@ -127,6 +127,16 @@ footer {
     border-bottom: #3a3a3a solid 1px;
 }
 
+#photos img {
+    width: 100%;
+    line-height: 1em;
+
+}
+
+#photos {
+    line-height: 0;
+}
+
 #social-networks {
     text-align: center;
     list-style: none;
@@ -215,6 +225,14 @@ footer {
     color: #fafafa;
 }
 
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
 
     nav {
@@ -269,12 +287,21 @@ footer {
         align-self: flex-end;
     }
 
+    #photos {
+        column-count: 3;
+
+    }
+
 }
 
 @media screen and (min-width: 992px) {
 
     #menu>li:hover {
         border-bottom: #3a3a3a solid 1px;
+    }
+
+    #photos {
+        column-count: 4;
     }
 }
 
